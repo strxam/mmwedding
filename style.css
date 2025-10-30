@@ -1,4 +1,186 @@
-.content {
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #333;
+    background: #f7f9fc;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://picsum.photos/1600/900?random=10') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 50, 120, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.hero .date {
+    font-style: italic;
+}
+
+.btn {
+    background: #4a90e2;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #3577c2;
+}
+
+/* Section Basics */
+section {
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 1000px;
     margin: auto;
-    max-width: 70%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+/* About */
+.about p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Event Section */
+.event {
+    background: #e8f0fe;
+}
+
+.event-details {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+/* RSVP Section */
+.rsvp {
+    background: #dbe9fc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form input,
+form select {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #cce0fc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #3577c2;
+}
+
+/* Gallery */
+.photo-gallery {
+    background: #f7f9fc;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.photos img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Footer */
+footer {
+    background: #1e3a8a;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
 }

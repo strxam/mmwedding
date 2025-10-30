@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html>
-<script src="./style.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mikaela & Max's Wedding</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-    <div class="content">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Mikaela & Max</h1>
+            <p>We're Getting Married</p>
+            <p class="date">30 Maj, 2026</p>
+            <a href="#details" class="btn">Explore Details</a>
+        </div>
+    </section>
 
-        <h1>My First Heading</h1>
-        <p>My first paragraph.</p>
-    </div>
+    <!-- About Section -->
+    <section class="about" id="details">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat felis vel est lacinia, eget pharetra justo pulvinar.</p>
+            <div class="gallery">
+                <img src="https://picsum.photos/600/400?random=1" alt="couple photo">
+                <img src="https://picsum.photos/601/400?random=2" alt="love">
+                <img src="https://picsum.photos/602/400?random=3" alt="engagement">
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="event">
+        <div class="container">
+            <h2>Wedding Events</h2>
+            <div class="event-details">
+                <div class="card">
+                    <h3>Ceremony</h3>
+                    <p>10:00 AM | St. Helena Church</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula ligula nec elit elementum dignissim.</p>
+                </div>
+                <div class="card">
+                    <h3>Reception</h3>
+                    <p>6:00 PM | The Garden Hall</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia turpis a libero finibus viverra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp">
+        <div class="container">
+            <h2>RSVP</h2>
+            <p>Please let us know if you can join us in celebrating our special day.</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <select required>
+                    <option value="">Will you attend?</option>
+                    <option value="yes">Yes, I’ll be there!</option>
+                    <option value="no">Sorry, can’t make it</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <h2>Memories</h2>
+            <div class="photos">
+                <img src="https://picsum.photos/603/400?random=4" alt="flowers">
+                <img src="https://picsum.photos/604/400?random=5" alt="venue">
+                <img src="https://picsum.photos/605/400?random=6" alt="rings">
+                <img src="https://picsum.photos/606/400?random=7" alt="bride and groom">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>With love, Mikaela & Max ❤️</p>
+        <p>© 2026 Beachmountainwedding. All Rights Reserved.</p>
+    </footer>
 </body>
-
 </html>
