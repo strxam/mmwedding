@@ -16,12 +16,24 @@ body {
 .hero {
     position: relative;
     height: 100vh;
-    background: url('https://picsum.photos/1600/900?random=10') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    overflow: hidden;
+    /* ensures the pseudo-element stays contained */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('assets/2018_600.jpg') top/cover no-repeat;
+    filter: blur(4px);
+    transform: scale(1.05);
+    /* prevents edge clipping of blur */
+    z-index: 0;
 }
 
 .hero .overlay {
@@ -80,6 +92,40 @@ h2 {
     margin-bottom: 30px;
 }
 
+h3 {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.image-container .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 50, 120, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
 /* About */
 .about p {
     max-width: 800px;
@@ -96,6 +142,7 @@ h2 {
 
 .gallery img {
     width: 300px;
+    height: 300px;
     border-radius: 10px;
 }
 
@@ -116,7 +163,12 @@ h2 {
     padding: 30px;
     border-radius: 15px;
     width: 300px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
 }
 
 .card h3 {
@@ -124,9 +176,16 @@ h2 {
     margin-bottom: 10px;
 }
 
+
+
+/* Hosts section*/
+.hosts {
+    background: #dbe9fc;
+}
+
 /* RSVP Section */
 .rsvp {
-    background: #dbe9fc;
+    background-color: white;
 }
 
 form {
@@ -174,6 +233,22 @@ form button:hover {
 .photos img {
     width: 100%;
     border-radius: 12px;
+}
+
+
+.OSA-link {
+    display: block;
+    max-width: 200px;
+    margin: auto;
+    border-radius: 30px;
+    text-decoration: none;;
+}
+
+.OSA-button {
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #4a90e2;
+    color: white;
 }
 
 /* Footer */
