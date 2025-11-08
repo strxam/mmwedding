@@ -1,4 +1,15 @@
 /* General Reset */
+/* For Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* For IE, Edge, and Firefox */
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
 * {
     margin: 0;
     padding: 0;
@@ -258,4 +269,11 @@ footer {
     text-align: center;
     padding: 30px;
     font-size: 0.9rem;
+}
+
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2.0rem;
+  }
 }
