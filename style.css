@@ -40,7 +40,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: url('assets/2018_600.jpg') top/cover no-repeat;
+    background: url('assets/643.jpg') top/cover no-repeat;
     filter: blur(4px);
     transform: scale(1.05);
     /* prevents edge clipping of blur */
